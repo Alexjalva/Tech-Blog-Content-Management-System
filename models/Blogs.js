@@ -19,6 +19,10 @@ Blog.init(
             type: DataTypes.STRING,
             allowNull: false,
         },
+        comments: {
+            type: DataTypes.STRING,
+            allowNull: false,
+        },
         date_created: {
             type: DataTypes.DATE,
             allowNull: false,
@@ -30,10 +34,6 @@ Blog.init(
                 model: 'user',
                 key: 'id',
             },
-        },
-        comments: {
-            type: DataTypes.STRING,
-            allowNull: false,
         },
     },
     {
